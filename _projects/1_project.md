@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: 2022年·秋
+description: 我言秋日胜春朝——一些个秋游和日常记录
+img: assets/img/22_autumn_cover.jpg
 importance: 1
 category: work
 related_publications: true
