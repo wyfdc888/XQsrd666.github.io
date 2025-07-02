@@ -28,8 +28,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+专注用算法解构城市脉动：
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+​​追踪​​：基于YOLOv8在成都车流中锁定炸街车辆（95%精度），借声纹模型甄别非法轰鸣（误报率↓12%）
+​​透视​​：通过BiSeNetv2扫视道路筋骨（99%分类），用多帧融合清除动态干扰（清除率＞98%）
+​​编织​​：在天地图上勾勒22辆胶囊车亚米级光轨（误差≤0.3m），调度逻辑比火锅沸腾更高效
+​​修复​​：用QGIS缝合断裂路网（10万+设施编码），让城市骨架在Vue动态图层中重生
