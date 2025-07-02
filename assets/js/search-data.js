@@ -501,7 +501,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%37%30%39%38%31%30%34%35%30@%71%71.%63%6F%6D", "_blank");
         },
       },{
         id: 'social-wechat_qr',
