@@ -8,7 +8,7 @@ profile:
   align: right
   image: home_img.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
+  more_info: 
     <p>184 6826 7793</p>
     <p>709810450@qq.com</p>
     <p>西南交通大学</p>
