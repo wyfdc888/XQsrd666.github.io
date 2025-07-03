@@ -10,9 +10,9 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: 
     <p>184 6826 7793</p>
-    <p>709810450@qq.com</p>
     <p>西南交通大学</p>
     <p>交通运输学院 | 四川成都</p>
+    <p>709810450@qq.com</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
