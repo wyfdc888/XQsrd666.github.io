@@ -6,7 +6,7 @@ subtitle: CV解锁城市密码，渲染引擎重构时空
 
 profile:
   align: right
-  image: home_img.jpg
+  image: home_image.jpg
   image_circular: false # crops the image to make it circular
   more_info: 
     <p>184 6826 7793</p>
