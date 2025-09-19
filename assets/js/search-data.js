@@ -455,7 +455,7 @@ ninja.data = [{
           title: '2022年·秋',
           description: "我言秋日胜春朝——一些个秋游和日常记录",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
+              window.location.href = "/projects/22autumn/";
             },},{id: "projects-project-2",
           title: 'project 2',
           description: "a project with a background image and giscus comments",
