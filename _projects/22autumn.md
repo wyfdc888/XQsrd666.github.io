@@ -10,6 +10,17 @@ related_publications: true
 
     2022年秋，翠湖公园、西山、昆工校内外的小日常~
 
+<div class="row" data-masonry='{"percentPosition": true}'>
+    {% assign images = "1.jpg,2.jpg,3.jpg,4.jpg,5.jpg,6.jpg,7.jpg,8.jpg" | split: "," %}
+    {% for img in images %}
+    <div class="col-sm-6 col-lg-4 col-xl-3 mt-3">
+        {% include figure.liquid 
+           path="assets/img/22_autumn/{{ img }}"  <!-- 修改路径 -->
+           title="秋景图 {{ forloop.index }}"    <!-- 自定义标题 -->
+           class="img-fluid rounded z-depth-1" %}
+    </div>
+    {% endfor %}
+</div>
 <div class="caption">
     Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
 </div>
