@@ -4,7 +4,7 @@ title: 2022年·秋
 description: 我言秋日胜春朝——一些个秋游和日常记录
 img: assets/img/22_autumn/22_autumn_cover.jpg
 importance: 1
-category: work
+category: fun
 related_publications: true
 ---
 
