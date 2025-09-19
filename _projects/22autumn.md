@@ -5,66 +5,98 @@ description: 我言秋日胜春朝——一些个秋游和日常记录
 img: assets/img/22_autumn/22_autumn_cover.jpg
 importance: 1
 category: fun
-related_publications: true
+related_publications: false
 ---
 
-    2022年秋，翠湖公园、西山、昆工校内外的小日常~
+    11月的翠湖，故地重游打卡
+    春城名不虚传，这个时节也超美的！！满是生机与活力，还透着秋高气爽的惬意🤗
 
-<div class="row">
+<!-- 1. 引入 GLightbox CSS & JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<style>
+/* 相册网格样式 */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem; /* 新增：网格下方间隔 */
+}
+.gallery-grid img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+</style>
+
+
+<!-- 2. 图片网格 -->
+<div class="gallery-grid">
   {% for i in (1..8) %}
-    <div class="col-sm-6 col-lg-4 mt-3">
-      {% include figure.liquid 
-         path="assets/img/22_autumn/{{ i }}.jpg" 
-         title="秋景图 {{ i }}"
-         class="img-fluid rounded z-depth-1"
-         loading="lazy" %}
-    </div>
+    {% assign p = 'assets/img/22_autumn/' | append: i | append: '.jpg' %}
+    <a href="{{ p | relative_url }}" class="glightbox">
+      <img src="{{ p | relative_url }}" loading="lazy">
+    </a>
   {% endfor %}
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/22_autumn/9.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    葛亮玄德小关羽爬西山⛰️
+    有一说一全程腿儿上去真的累s，小关羽半途而废直接罢工要在半山腰等我们hhhh，
+    但是山顶俯瞰滇池真的绝了，成就感与体验真让人觉得不虚此行
+    一眼看去 昆明就是海滨城市好吗？我说的！
+    
+<div class="gallery-grid">
+  {% for i in (9..14) %}
+    {% assign p = 'assets/img/22_autumn/' | append: i | append: '.jpg' %}
+    <a href="{{ p | relative_url }}" class="glightbox">
+      <img src="{{ p | relative_url }}" loading="lazy">
+    </a>
+  {% endfor %}
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
 
-{% raw %}
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+    毕业信息采集
+    好不容易化了妆，跟二弟穿着俺们的衣服 让王老爷给拍了几张皂片嘿嘿🐱（葛亮兄忘了为啥没去）
+    
+<div class="gallery-grid">
+  {% for i in (17..19) %}
+    {% assign p = 'assets/img/22_autumn/' | append: i | append: '.jpg' %}
+    <a href="{{ p | relative_url }}" class="glightbox">
+      <img src="{{ p | relative_url }}" loading="lazy">
+    </a>
+  {% endfor %}
 </div>
-```
 
-{% endraw %}
+    再怎么说也是深秋，晚上也还是有一点秋的萧瑟的
+    血月，图个新鲜凑一堆看看看拍拍拍📷，有一点想家了哈哈哈
+    
+<div class="gallery-grid">
+  {% for i in (15..16) %}
+    {% assign p = 'assets/img/22_autumn/' | append: i | append: '.jpg' %}
+    <a href="{{ p | relative_url }}" class="glightbox">
+      <img src="{{ p | relative_url }}" loading="lazy">
+    </a>
+  {% endfor %}
+</div>
+
+回想起来，真的是最幸福的一段时光了，本科真的把我养的很好🥹
+
+
+<!-- 3. 初始化 GLightbox -->
+<script>
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    zoomable: true
+  });
+
+  // 如果后面又生成新的 .glightbox，可以刷新绑定：
+  lightbox.reload();
+</script>
