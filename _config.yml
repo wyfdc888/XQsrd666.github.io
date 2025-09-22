@@ -86,8 +86,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: 我的博客 # blog_name will be displayed in your blog page
+blog_description: 一个交通人的音频、视觉算法学习与实践记录
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -150,6 +150,8 @@ collections:
       layout: post
     output: true
   projects:
+    output: true
+  life:
     output: true
 
 # -----------------------------------------------------------------------------
@@ -255,8 +257,8 @@ jekyll-archives:
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+display_tags: ["图像分割", "目标检测", "图像处理与视觉算法", "语音处理与识别", "项目实践与系统设计"] # these tags will be displayed on the front page of your blog
+display_categories: ["研究笔记", "项目实践","学习总结", "随笔"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -388,6 +390,7 @@ enable_tooltips: false # enables automatic tooltip links generated for each sect
 enable_darkmode: true # enables switching between light/dark modes
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
+enable_life_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
 enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.

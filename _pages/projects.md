@@ -1,11 +1,11 @@
 ---
 layout: page
-title: projects
+title: 项目与实习
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: 项目经历与实习
 nav: true
-nav_order: 3
-display_categories: [work, fun]
+nav_order: 1
+display_categories: [work]
 horizontal: false
 ---
 

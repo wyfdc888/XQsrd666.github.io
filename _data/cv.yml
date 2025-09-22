@@ -1,97 +1,89 @@
-- title: General Information
+- title: 基本信息
   type: map
   contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+    - name: 姓名
+      value: 韩晗
+    - name: 民族
+      value: 汉族
+    - name: 出生年月
+      value: 2000.12
+    - name: 政治面貌
+      value: 中共党员
+    - name: 联系电话
+      value: 18468267793
+    - name: 电子邮箱
+      value: 709810450@qq.com
+    - name: 籍贯
+      value: 河北邯郸
+    - name: 毕业院校
+      value: 西南交通大学
+  photo: /assets/img/id_photo.jpg
+  technologies:
+    - 计算机视觉
+    - 语音识别
+    - 空间数据分析
+    - web前端开发
+    - Docker容器化部署
 
-- title: Education
+- title: 教育背景
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: 硕士研究生 交通运输（推免）
+      institution: 西南交通大学（211），交通运输与物流学院
+      year: 2023.09 - 至今
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Top 20%
+        - 研究方向：自动驾驶、人工智能、车路协同
+    - title: 本科 交通工程
+      institution: 昆明理工大学，交通工程学院
+      year: 2019.09 - 2023.06
       description:
-        - Description 1.
-        - Description 2.
+        - Top 5%
+        - 第十七届全国大学生交通运输科技大赛 国家级一等奖
+        - 第二十二届全国大学生英语竞赛 国家级三等奖
+        - 2021年全国大学生数学建模竞赛 云南省三等奖
+        - 云南省三好学生、云南省优秀毕业生
 
-- title: Experience
+- title: 项目经历
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: 炸街事件监测及可视化平台
+      institution: 与成都市交通管理局合作
+      year: 2023.10 - 2024.08
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - 主要负责人，构建云边协同架构，推动交通管理智能化
+        - 边缘实时处理：Jetson 处理 RTSP 流，端到端延迟 <500ms
+        - 音频识别模型：双模型融合，误报率 ↓12%，召回率 ↑93%
+        - 视频检测与车辆定位：YOLOv8 + LPRNet，识别准确率 >95.3%
+        - 可视化平台：支持日均 1000+ 小时音视频处理，投诉率 ↓40%
+        - 技术栈：DeepStream、YOLOv8、LPRNet、Django、Vue.js、MySQL、Docker
+
+    - title: 基于球型摄像机的自适应道路结构识别与违法检测
+      institution: 与成都市交通管理局合作
+      year: 2024.09 - 2024.12
       description:
-        - Description 1.
-        - Description 2.
+        - 主要负责人，基于球机视频实现道路结构提取与违法检测
+        - 语义分割：BiSeNetv2，mIoU 达 92.3%
+        - 全景拼接：柱面投影 + 特征匹配，实现全角度拼接
+        - 实时检测：压实线变道检测准确率 92.6%
+        - 技术栈：Pytorch、SIFT/FLANN、语义分割、Kafka、Docker
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: 实习经历
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: 交通设施数字化与系统开发实习
+      institution: 成都慧行科技有限公司
+      year: 2025.03 - 2025.05
+      description:
+        - 结构化编码体系设计，规范 1000+ 设施标识
+        - 基于 QGIS+Python 自动化路网拓扑建模与属性清洗
+        - 可视化平台开发：基于高德地图 API，实现数据全流程闭环管理
+        - 技术栈：QGIS、拓扑建模、高德地图 API、Vue.js、JavaScript
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
+- title: 个人技能
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - 专业资格：大学英语六级（534/710）
+    - 智能交通算法：YOLOv8 目标检测，BiSeNetv2 语义分割优化
+    - 空间计算：OpenCV 图像处理，QGIS 路网拓扑建模，高德地图 API
+    - 工程落地经验：Docker 部署，Jetson 边缘优化，Kafka 实时传输

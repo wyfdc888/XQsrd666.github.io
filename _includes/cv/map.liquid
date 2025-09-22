@@ -1,29 +1,32 @@
-<table class="table table-cv table-sm table-borderless table-responsive">
-  {% for content in entry.contents %}
-    <tr>
-      <td class="p-1 pr-2 font-weight-bold">
-        <b>{{ content.name }}</b>
-      </td>
-      {% if content.value %}
-        <td class="p-1 pl-2 font-weight-light text">{{ content.value }}</td>
-      {% endif %}
-      {% if content.links %}
-        <td class="p-1 pl-2 font-weight-light text">
-          <div class="container-pdf">
-            {% for item in content.links %}
-              {% if item.link %}
-                <div class="container-link-button">
-                  {% if item.name %}
-                    <a href="{{ item.link }}" target="_blank" class="btncv z-depth-0">{{ item.name }}</a>
-                  {% else %}
-                    <a href="{{ item.link }}" target="_blank" class="btncv z-depth-0">doc</a>
-                  {% endif %}
-                </div>
-              {% endif %}
-            {% endfor %}
-          </div>
-        </td>
-      {% endif %}
-    </tr>
-  {% endfor %}
-</table>
+<div class="d-flex align-items-start">
+  <!-- 左边表格 -->
+  <div class="flex-grow-1" id="cv-contents">
+    <table class="table table-cv table-sm table-borderless table-responsive mb-0">
+      {% for content in entry.contents %}
+        <tr>
+          <td class="p-1 pr-2 font-weight-bold"><b>{{ content.name }}</b></td>
+          {% if content.value %}
+            <td class="p-1 pl-2 font-weight-light text">{{ content.value }}</td>
+          {% endif %}
+        </tr>
+      {% endfor %}
+    </table>
+
+    {% if entry.technologies %}
+      <hr class="mt-2 mb-2">
+      <div class="technologies">
+        {% for tech in entry.technologies %}
+          <span class="badge font-weight-bold text-uppercase align-middle">{{ tech }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+
+  <!-- 右边证件照 -->
+  {% if entry.photo %}
+    <div class="ml-3 d-flex align-items-start" id="cv-photo-container">
+      <img src="{{ entry.photo | relative_url }}" alt="证件照"
+           style="width:auto; max-height:250px; border-radius:8px; object-fit:cover;">
+    </div>
+  {% endif %}
+</div>

@@ -15,6 +15,11 @@ table.table-cv {
   }
 }
 
+.technologies span {
+  background-color: var(--global-theme-color) !important;
+  color: var(--global-card-bg-color) !important;
+}
+
 a.btncv {
   color: var(--global-text-color) !important;
   border: 1px solid var(--global-text-color) !important;

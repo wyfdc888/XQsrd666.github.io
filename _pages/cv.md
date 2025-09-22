@@ -1,11 +1,11 @@
 ---
 layout: cv
 permalink: /cv/
-title: cv
+title: 个人简历
 nav: true
-nav_order: 5
-cv_pdf: example_pdf.pdf # you can also use external links here
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+nav_order: 2
+cv_pdf: 韩晗-计算机视觉-西南交通大学.pdf # you can also use external links here
+description: 韩晗-计算机视觉-西南交通大学
 toc:
   sidebar: left
 ---
